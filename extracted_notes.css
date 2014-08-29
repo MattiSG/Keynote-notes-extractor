@@ -1,0 +1,12 @@
+body {
+	counter-reset: slide;
+}
+
+article {
+	margin: 1em;
+}
+
+article:before {
+	counter-increment: slide;
+	content: counter(slide) " — ";
+}
